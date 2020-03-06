@@ -110,10 +110,63 @@ console.log(join);
 var vow=['a','e','i','o','u'];
 console.log(vow.pop());
 
-
 //push- adds new items to the end of an array, and returns the new length
 //output:5
 var vow1=['a','e','i'];
 console.log(vow1.push('o','u'));
 console.log(vow1);
+
+//---------------------------------------------------
+
+//Exercise - Prompt and calculate mnarks
+//--js file
+let name = prompt("Enter the name","roopa");
+let m1 = prompt("Enter mark1","78");
+while(isNaN(m1)==true)
+{
+    alert("Enter valid mark1");
+    m1 = prompt("Enter mark1");
+}
+let m2 = prompt("Enter mark2","82");
+while(isNaN(m2)==true)
+{
+    alert("Enter valid mark2");
+    m2 = prompt("Enter mark2","78");
+}
+let m3 = prompt("Enter mark3","65");
+while(isNaN(m3)==true)
+{
+    alert("Enter valid mark3");
+    m3 = prompt("Enter mark3","78");
+}
+function obj(name,m1,m2,m3) {
+    this.name = name,
+    this.m1=m1,
+    this.m2=m2,
+    this.m3=m3
+}
+
+function total(){
+    this.name=name;
+    this.objtotal=parseInt(m1)+parseInt(m2)+parseInt(m3);
+}
+
+function avg(){
+    this.objavg=objtotal.objtotal/3;
+}
+
+function det(){
+    this.name=objdetails.name,
+    this.total=objtotal.objtotal,
+    this.avg=objavg.objavg
+}
+
+const objdetails = new obj(name,m1,m2,m3);
+console.log(objdetails);
+const objtotal = new total();
+console.log(objtotal);
+const objavg = new avg();
+console.log(objavg);
+const totaldet = new det();
+console.log(totaldet);
 
