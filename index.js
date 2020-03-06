@@ -15,6 +15,18 @@ function fnc(item,index)
   console.log(index + ':' + item);
 }
 
+/*for(let a of array){
+    console.log(a);
+  }
+  const each = (item,index) => {
+    if(index>1 && index<5){
+      item.name='test'
+    }
+  }
+for(let i=0;i<array.length;i++){
+   console.log(array[i]);
+}*/
+
 //map - creates a new array with the results of calling a function for every array element
 //output:[11, 22, 33, 44, 55]
 var arr = [1,2,3,4,5];
@@ -48,7 +60,7 @@ console.log(fruits.indexOf('Orange'));
 //output:2
 var price=[23,1,76,101,35,95];
 function fnc3(price){
-  return price>=50;
+  return price === 76;
 }
 console.log(price.findIndex(fnc3))
 
@@ -93,4 +105,15 @@ var price=[145,23,76,101,35,95];
 var join=arr.concat(price);
 console.log(join);
 
+//pop-removes the last element of an array, and returns that element
+//output:u
+var vow=['a','e','i','o','u'];
+console.log(vow.pop());
+
+
+//push- adds new items to the end of an array, and returns the new length
+//output:5
+var vow1=['a','e','i'];
+console.log(vow1.push('o','u'));
+console.log(vow1);
 
