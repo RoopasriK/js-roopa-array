@@ -116,10 +116,20 @@ var vow1=['a','e','i'];
 console.log(vow1.push('o','u'));
 console.log(vow1);
 
+//shift-removes the first item of an array
+//output:pigeon
+console.log(bird);
+console.log(bird.shift());
+
+//unshift-adds new items to the beginning of an array, and returns the new length
+//output:5
+console.log(bird.unshift("peacock","ostrich"));
+
 //---------------------------------------------------
 
 //Exercise - Prompt and calculate mnarks
 //--js file
+/*
 let name = prompt("Enter the name","roopa");
 let m1 = prompt("Enter mark1","78");
 while(isNaN(m1)==true)
@@ -169,4 +179,4 @@ const objavg = new avg();
 console.log(objavg);
 const totaldet = new det();
 console.log(totaldet);
-
+*/
